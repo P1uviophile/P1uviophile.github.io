@@ -25,6 +25,27 @@
     
     
     <entry>
+      <title>GithubRepo+Vercel+Picgo搭建图床</title>
+      <link href="/2024/06/22/GithubRepo+Vercel+Picgo%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/"/>
+      <url>/2024/06/22/GithubRepo+Vercel+Picgo%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/</url>
+      
+        <content type="html"><![CDATA[<p><a href="https://htext.top/post/1a4f97f8.html">Github Repo + Vercel + PicGo 打造一个快速的私人图床 - Huanlan233&#39;s Texts (htext.top)</a></p><p><a href="https://www.fattymonkey.com/post/10023.html">Github + Vercel 搭建免费的个人图床 | 繁体猴の客栈 (fattymonkey.com)</a></p><p><a href="https://zhuanlan.zhihu.com/p/350598351">GitHub+picGo+CDN搭建免费图床 - 知乎 (zhihu.com)</a></p><p><a href="https://blog.csdn.net/hubing_hust/article/details/127837402">10. vscode + picgo + github 配置免费图床_vscode picgo-CSDN博客</a></p><p><img src="https://klog-pic7.vercel.app/2024-06-24-01-04-53" alt="2024-06-24-01-04-53"></p><h3 id="VS-Code-Picgo快捷键"><a href="#VS-Code-Picgo快捷键" class="headerlink" title="VS Code Picgo快捷键:"></a>VS Code Picgo快捷键:</h3><p>CTRL + ALT + E : 文件资源管理器上传</p><p>CTRL + ALT + O : 截图上传</p><p>CTRL + ALT + U : 剪贴板上传</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> 图床 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>自建MetingJS-API并添加cookie</title>
       <link href="/2024/06/21/%E8%87%AA%E5%BB%BAMetingJS-API%E5%B9%B6%E6%B7%BB%E5%8A%A0cookie/"/>
       <url>/2024/06/21/%E8%87%AA%E5%BB%BAMetingJS-API%E5%B9%B6%E6%B7%BB%E5%8A%A0cookie/</url>
