@@ -48,6 +48,29 @@
     
     
     <entry>
+      <title>自建MetingJS-API并添加cookie</title>
+      <link href="/2024/06/21/%E8%87%AA%E5%BB%BAMetingJS-API%E5%B9%B6%E6%B7%BB%E5%8A%A0cookie%20copy/"/>
+      <url>/2024/06/21/%E8%87%AA%E5%BB%BAMetingJS-API%E5%B9%B6%E6%B7%BB%E5%8A%A0cookie%20copy/</url>
+      
+        <content type="html"><![CDATA[<p>anzhiyu主题自带的音乐馆使用了metingJs插件来提供音乐播放器的功能, 但是metingJs默认提供的API有抽风&#x2F;下线&#x2F;跑路的风险, 最重要的是metingJs默认的API 没! 有! 提供VIP权限! 遇到需要会员的歌时只能播放试听片段, 让人很不爽!</p><p><img src="https://img.picui.cn/free/2024/06/21/66753431b6eb1.png" alt="alt text"></p><p>而部署自建metingJs-api并添加有VIP权限的cookie就能解决上面的问题:</p><p><img src="https://img.picui.cn/free/2024/06/21/667553257d0c4.png" alt="img"></p><h5 id="参考博客"><a href="#参考博客" class="headerlink" title="参考博客:"></a>参考博客:</h5><p><a href="https://blog.sinzmise.top/posts/61417/">自建Meting服务 | 星空故事·魔法小屋 (sinzmise.top)</a></p><p><a href="https://blog.saop.cc/p/300/#%E5%BA%94%E7%94%A8%E4%BA%8E-hexo-%E7%9A%84-butterfly-%E4%B8%BB%E9%A2%98">部署Meting-API | 定の栈 (saop.cc)</a></p><p><a href="https://blog.anheyu.com/posts/a76e.html">♪(^∇^*)欢迎肥来！音乐meting自建api | 安知鱼 (anheyu.com)</a></p><p>cookie修改路径: <a href="https://github.com/P1uviophile/joking-metingjs-api/blob/main/src/providers/netease/util.js">joking-metingjs-api&#x2F;src&#x2F;providers&#x2F;netease&#x2F;util.js at main · P1uviophile&#x2F;joking-metingjs-api (github.com)</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> Vercel </tag>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello Blog!</title>
       <link href="/2024/06/20/Hello%20Blog!/"/>
       <url>/2024/06/20/Hello%20Blog!/</url>
