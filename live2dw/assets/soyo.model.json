@@ -13,10 +13,6 @@
   },
   "hit_areas": [
     {
-      "name": "face",
-      "id": "D_PSD.167"
-    },
-    {
       "name": "body",
       "id": "D_PSD.206"
     }
