@@ -59,7 +59,7 @@
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2024-06-25 18:20:27',
+  postUpdate: '2024-06-25 19:05:11',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -466,7 +466,7 @@ queueMicrotask(() => {
 
   const getComment = async () => {
     try {
-      const res = await fetch('https://waline.api.joking7.comp/api/comment?type=recent&count=6', { method: 'GET' })
+      const res = await fetch('https://waline.api.joking7.com/api/comment?type=recent&count=6', { method: 'GET' })
       const result = await res.json()
       const walineArray = result.data.map(e => {
         return {
