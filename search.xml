@@ -4,50 +4,6 @@
   
     
     <entry>
-      <title>Github repo + Vercel + Picgo 搭建图床</title>
-      <link href="/2024/06/22/Github%20repo_Vercel_Picgo%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/"/>
-      <url>/2024/06/22/Github%20repo_Vercel_Picgo%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/</url>
-      
-        <content type="html"><![CDATA[<p><a href="https://htext.top/post/1a4f97f8.html">Github Repo + Vercel + PicGo 打造一个快速的私人图床 - Huanlan233&#39;s Texts (htext.top)</a></p><p><a href="https://www.fattymonkey.com/post/10023.html">Github + Vercel 搭建免费的个人图床 | 繁体猴の客栈 (fattymonkey.com)</a></p><p><a href="https://zhuanlan.zhihu.com/p/350598351">GitHub+picGo+CDN搭建免费图床 - 知乎 (zhihu.com)</a></p><p><a href="https://blog.csdn.net/hubing_hust/article/details/127837402">10. vscode + picgo + github 配置免费图床_vscode picgo-CSDN博客</a></p><h3 id="VS-Code-Picgo快捷键"><a href="#VS-Code-Picgo快捷键" class="headerlink" title="VS Code Picgo快捷键:"></a>VS Code Picgo快捷键:</h3><p>CTRL + ALT + E : 文件资源管理器上传</p><p>CTRL + ALT + O : 截图上传</p><p>CTRL + ALT + U : 剪贴板上传</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-            <tag> 图床 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>自建MetingJS-API并添加cookie</title>
-      <link href="/2024/06/21/%E8%87%AA%E5%BB%BAMetingJS-API%E5%B9%B6%E6%B7%BB%E5%8A%A0cookie/"/>
-      <url>/2024/06/21/%E8%87%AA%E5%BB%BAMetingJS-API%E5%B9%B6%E6%B7%BB%E5%8A%A0cookie/</url>
-      
-        <content type="html"><![CDATA[<p>anzhiyu主题自带的音乐馆使用了metingJs插件来提供音乐播放器的功能, 但是metingJs默认提供的API有抽风&#x2F;下线&#x2F;跑路的风险, 最重要的是metingJs默认的API 没! 有! 提供VIP权限! 遇到需要会员的歌时只能播放试听片段, 让人很不爽!</p><p><img src="https://img.picui.cn/free/2024/06/21/66753431b6eb1.png" alt="alt text"></p><p>而部署自建metingJs-api并添加有VIP权限的cookie就能解决上面的问题:</p><p><img src="https://img.picui.cn/free/2024/06/21/667553257d0c4.png" alt="img"></p><h5 id="参考博客"><a href="#参考博客" class="headerlink" title="参考博客:"></a>参考博客:</h5><p><a href="https://blog.sinzmise.top/posts/61417/">自建Meting服务 | 星空故事·魔法小屋 (sinzmise.top)</a></p><p><a href="https://blog.saop.cc/p/300/#%E5%BA%94%E7%94%A8%E4%BA%8E-hexo-%E7%9A%84-butterfly-%E4%B8%BB%E9%A2%98">部署Meting-API | 定の栈 (saop.cc)</a></p><p><a href="https://blog.anheyu.com/posts/a76e.html">♪(^∇^*)欢迎肥来！音乐meting自建api | 安知鱼 (anheyu.com)</a></p><p>cookie修改路径: <a href="https://github.com/P1uviophile/joking-metingjs-api/blob/main/src/providers/netease/util.js">joking-metingjs-api&#x2F;src&#x2F;providers&#x2F;netease&#x2F;util.js at main · P1uviophile&#x2F;joking-metingjs-api (github.com)</a></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-            <tag> Vercel </tag>
-            
-            <tag> Hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hello Blog!</title>
       <link href="/2024/06/20/Hello%20Blog!/"/>
       <url>/2024/06/20/Hello%20Blog!/</url>
