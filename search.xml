@@ -25,31 +25,6 @@
     </entry>
     
     
-    
-    <entry>
-      <title>Hello Blog!</title>
-      <link href="/2024/06/20/Hello%20Blog!/"/>
-      <url>/2024/06/20/Hello%20Blog!/</url>
-      
-        <content type="html"><![CDATA[<p>折腾了好几天</p><p>一开始选择的是这位佬的主题:<a href="https://yangxiang.cc/2022/02/17/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo-theme-cola%E4%B8%BB%E9%A2%98/">我的技术与生活——如何使用hexo-theme-cola主题 (yangxiang.cc)</a>, 然后照着网上的教程学着部署Hexo到服务器上(选择部署到服务器主要是因为手里正好有个空闲的服务器), 修修改改部署完大概是这个效果:</p><p><img src="https://pic.joking7.com/202406212347498.png" alt="img"></p><p>部署完之后又发现大佬的主题已经很久没有维护了, 而且文档写得有点简略, 主题源码还有一些bug需要自己修正, 再加上网站备完案之后服务器续费也很贵,Hexo又可以免费托管….</p><p>于是我决定把博客托管到GitHub,再用Vercel部署, <strong>顺便</strong>再换个主题好啦^ ^</p><p>(换的是这位佬的主题:<a href="https://blog.anheyu.com/">安知鱼 - 生活明朗 万物可爱 (anheyu.com)</a>)</p><p><img src="https://pic.joking7.com/202406212352847.png" alt="1718888996928"></p><p>目前网站还在备案所以国内访问还很慢…这几天先试着用CloudFlare架个图床吧(话说用GitHub当图床仓库真的靠谱吗 不想冒着被封号的风险啊orz)</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 破事水 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
   
   
 </search>
