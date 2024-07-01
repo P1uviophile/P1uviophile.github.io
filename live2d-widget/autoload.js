@@ -36,12 +36,13 @@ if (screen.width >= 768) {
 			waifuPath: live2d_path + "waifu-tips.json",
 			//apiPath: "https://live2d.fghrsh.net/api/",
 			//vercel部署cdn
-			//cdnPath: "https://live2d.api.joking7.com/",
+			cdnPath: "https://live2d.api.joking7.com/",
 			//默认cdn
 			//cdnPath: "https://fastly.jsdelivr.net/gh/p1uviophile/live2d_api@V1.0/",
 			//本地加载
-			cdnPath: live2d_path + "live2d_api/live2d_api",
-			tools: ["hitokoto", "asteroids", "switch-model", "switch-texture", "photo", "info", "quit"]
+			//cdnPath: live2d_path + "live2d_api/live2d_api",
+			//tools: ["hitokoto", "asteroids", "switch-model", "switch-texture", "photo", "info", "quit"]
+			tools: [ "photo","quit"]
 		});
 	});
 }
