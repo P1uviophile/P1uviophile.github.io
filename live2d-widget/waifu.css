@@ -31,7 +31,7 @@
 	transform: translateY(3px);
 	transition: transform .3s ease-in-out, bottom 3s ease-in-out;
 	z-index: 1;
-	opacity: 0.8;
+	opacity: 1;
 }
 
 #waifu:hover {
@@ -54,12 +54,12 @@
 	position: absolute;
 	text-overflow: ellipsis;
 	transition: opacity 1s;
-	width: 150px;
+	width: 180px;
 	word-break: break-all;
 }
 
 #waifu-tips.waifu-tips-active {
-	opacity: 0.8;
+	opacity: 1;
 	transition: opacity .2s;
 }
 
