@@ -3519,7 +3519,7 @@ figure.highlight pre .javascript .function {
 #article-container .code-expand-btn:not(.expand-done) ~ table,
 #article-container .code-expand-btn:not(.expand-done) ~ pre {
   overflow: hidden;
-  height: 330px;
+  height: 250px;
 }
 @-moz-keyframes code-expand-key {
   0% {
@@ -16282,6 +16282,12 @@ li.card-category-list-item {
   background: url("/img/comment_bg.png") 100% 100% no-repeat;
 }
 #vcomment textarea:focus {
+  background-image: none;
+}
+#waline-wrap textarea {
+  background: url("https://pic.joking7.com/2024-06-24-22-52-03") 100% 100% no-repeat;
+}
+#waline-wrap textarea:focus {
   background-image: none;
 }
 .fireworks {
