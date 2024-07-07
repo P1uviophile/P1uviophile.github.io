@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title>刷题记录 1</title>
+      <title>刷题记录 2</title>
       <link href="/2024/07/07/%E5%88%B7%E9%A2%982/"/>
       <url>/2024/07/07/%E5%88%B7%E9%A2%982/</url>
       
@@ -15,6 +15,10 @@
         <tags>
             
             <tag> leetcode </tag>
+            
+            <tag> BFS </tag>
+            
+            <tag> DP </tag>
             
         </tags>
       
@@ -34,6 +38,12 @@
         <tags>
             
             <tag> leetcode </tag>
+            
+            <tag> 二叉树 </tag>
+            
+            <tag> 位运算 </tag>
+            
+            <tag> BFS </tag>
             
         </tags>
       
