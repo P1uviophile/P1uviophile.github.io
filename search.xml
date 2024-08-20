@@ -92,6 +92,25 @@
     
     
     <entry>
+      <title>一些MySQL知识点的总结 (待更新</title>
+      <link href="/2024/07/21/MySQL/"/>
+      <url>/2024/07/21/MySQL/</url>
+      
+        <content type="html"><![CDATA[<h1 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h1><h2 id="MySQL四种隔离级别"><a href="#MySQL四种隔离级别" class="headerlink" title="MySQL四种隔离级别"></a>MySQL四种隔离级别</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>SQL 标准定义了四个隔离级别：</p><ul><li><strong>READ-UNCOMMITTED(读取未提交)</strong> ：最低的隔离级别，允许读取尚未提交的数据变更，可能会导致脏读、幻读或不可重复读。</li><li><strong>READ-COMMITTED(读取已提交)</strong> ：允许读取并发事务已经提交的数据，可以阻止脏读，但是幻读或不可重复读仍有可能发生。</li><li><strong>REPEATABLE-READ(可重复读)</strong> ：对同一字段的多次读取结果都是一致的，除非数据是被本身事务自己所修改，可以阻止脏读和不可重复读，但幻读仍有可能发生。</li><li><strong>SERIALIZABLE(可串行化)</strong> ：最高的隔离级别，完全服从 ACID 的隔离级别。所有的事务依次逐个执行，这样事务之间就完全不可能产生干扰，也就是说，该级别可以防止脏读、不可重复读以及幻读。</li></ul><hr><p>(以上小节著作权归JavaGuide(javaguide.cn)所有 基于MIT协议 原文链接：<a href="https://javaguide.cn/database/mysql/transaction-isolation-level.html">https://javaguide.cn/database/mysql/transaction-isolation-level.html</a>)</p><h3 id="直观表格"><a href="#直观表格" class="headerlink" title="直观表格"></a>直观表格</h3><table><thead><tr><th align="center"><strong>隔离级别</strong></th><th align="center"><strong>脏读</strong></th><th align="center"><strong>不可重复读</strong></th><th align="center"><strong>幻读</strong></th></tr></thead><tbody><tr><td align="center">READ-UNCOMMITTED</td><td align="center">√</td><td align="center">√</td><td align="center">√</td></tr><tr><td align="center">READ-COMMITTED</td><td align="center">×</td><td align="center">√</td><td align="center">√</td></tr><tr><td align="center">REPEATABLE-READ</td><td align="center">×</td><td align="center">×</td><td align="center">√</td></tr><tr><td align="center">SERIALIZABLE</td><td align="center">×</td><td align="center">×</td><td align="center">×</td></tr></tbody></table><h3 id="关于三种隔离问题的简单理解"><a href="#关于三种隔离问题的简单理解" class="headerlink" title="关于三种隔离问题的简单理解:"></a>关于三种隔离问题的简单理解:</h3><h4 id="1-脏读"><a href="#1-脏读" class="headerlink" title="1. 脏读"></a>1. 脏读</h4><p>事务A执行过程中会读取到<strong>其他事务未提交的数据</strong></p><h4 id="2-不可重复读"><a href="#2-不可重复读" class="headerlink" title="2. 不可重复读"></a>2. 不可重复读</h4><p>事务A只能读取到已提交的数据 但在事务执行过程中会读取到其他事务提交的数据 导致<strong>在不同时间的相同查询中可能会得到不同的结果</strong></p><h4 id="3-幻读"><a href="#3-幻读" class="headerlink" title="3. 幻读"></a>3. 幻读</h4><p>能确保同一事务多次查询的结果一致 但如果此级别的事务正在执行时，<strong>另一个事务成功的插入了某条数据</strong>，因为它每次查询的结果都是一样的，所以会导致<strong>查询不到这条数据</strong>，自己<strong>重复插入时失败</strong>（因为唯一约束的原因）。</p><h3 id="ETC"><a href="#ETC" class="headerlink" title="ETC"></a>ETC</h3><p>MySQL InnoDB 存储引擎的默认支持的隔离级别是 <strong>REPEATABLE-READ（可重读）</strong></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>布隆过滤器和前缀树实现违禁词过滤的性能对比</title>
       <link href="/2024/07/16/%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8%E5%92%8C%E5%89%8D%E7%BC%80%E6%A0%91%E5%AE%9E%E7%8E%B0%E8%BF%9D%E7%A6%81%E8%AF%8D%E8%BF%87%E6%BB%A4%E7%9A%84%E6%80%A7%E8%83%BD%E5%AF%B9%E6%AF%94/"/>
       <url>/2024/07/16/%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8%E5%92%8C%E5%89%8D%E7%BC%80%E6%A0%91%E5%AE%9E%E7%8E%B0%E8%BF%9D%E7%A6%81%E8%AF%8D%E8%BF%87%E6%BB%A4%E7%9A%84%E6%80%A7%E8%83%BD%E5%AF%B9%E6%AF%94/</url>
