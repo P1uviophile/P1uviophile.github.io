@@ -225,6 +225,31 @@
     
     
     <entry>
+      <title>Debug 合集 1</title>
+      <link href="/2024/06/28/Debug%20%E5%90%88%E9%9B%86%201/"/>
+      <url>/2024/06/28/Debug%20%E5%90%88%E9%9B%86%201/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Mybatis-Plus-的默认-Insert-方法不支持-SQLite-主键id自增后返回id"><a href="#Mybatis-Plus-的默认-Insert-方法不支持-SQLite-主键id自增后返回id" class="headerlink" title="Mybatis-Plus 的默认 Insert 方法不支持 SQLite 主键id自增后返回id"></a>Mybatis-Plus 的默认 Insert 方法不支持 SQLite 主键id自增后返回id</h3><p>写毕业设计项目的时候遇到的 需要插入一条新的记录然后返回新记录的主键id 这个id是自增的</p><p>然后发现Mybatis-Plus的默认Insert方法不支持这个操作 可以插入但是不能返回自增后的id</p><p>后来用事务解决了：本来用SQLite就是考虑到项目的数据量较小才用的 所以直接用串行化在插入操作之后查询SELECT last_insert_rowid()获取刚刚插入的记录的id字段</p><p>上网查了一下似乎改一下sqlite-jdbc的版本就能解决？不过我没试过：<a href="https://www.cnblogs.com/qingzhen/p/17944868">sqlite-jdbc版本导致插入数据自增id问题</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> DEBUG </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SQLite </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Vercel部署Meting-API并添加网易云cookie</title>
       <link href="/2024/06/21/%E8%87%AA%E5%BB%BAMetingJS-API%E5%B9%B6%E6%B7%BB%E5%8A%A0cookie/"/>
       <url>/2024/06/21/%E8%87%AA%E5%BB%BAMetingJS-API%E5%B9%B6%E6%B7%BB%E5%8A%A0cookie/</url>
