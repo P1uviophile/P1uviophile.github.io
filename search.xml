@@ -229,7 +229,7 @@
       <link href="/2024/06/28/Debug%20%E5%90%88%E9%9B%86%201/"/>
       <url>/2024/06/28/Debug%20%E5%90%88%E9%9B%86%201/</url>
       
-        <content type="html"><![CDATA[<h3 id="Mybatis-Plus-的默认-Insert-方法不支持-SQLite-主键id自增后返回id"><a href="#Mybatis-Plus-的默认-Insert-方法不支持-SQLite-主键id自增后返回id" class="headerlink" title="Mybatis-Plus 的默认 Insert 方法不支持 SQLite 主键id自增后返回id"></a>Mybatis-Plus 的默认 Insert 方法不支持 SQLite 主键id自增后返回id</h3><p>写毕业设计项目的时候遇到的 需要插入一条新的记录然后返回新记录的主键id 这个id是自增的</p><p>然后发现Mybatis-Plus的默认Insert方法不支持这个操作 可以插入但是不能返回自增后的id</p><p>后来用事务解决了：本来用SQLite就是考虑到项目的数据量较小才用的 所以直接用串行化在插入操作之后查询SELECT last_insert_rowid()获取刚刚插入的记录的id字段</p><p>上网查了一下似乎改一下sqlite-jdbc的版本就能解决？不过我没试过：<a href="https://www.cnblogs.com/qingzhen/p/17944868">sqlite-jdbc版本导致插入数据自增id问题</a></p>]]></content>
+        <content type="html"><![CDATA[<h3 id="Mybatis-Plus-的默认-Insert-方法不支持-SQLite-主键id自增后返回id"><a href="#Mybatis-Plus-的默认-Insert-方法不支持-SQLite-主键id自增后返回id" class="headerlink" title="Mybatis-Plus 的默认 Insert 方法不支持 SQLite 主键id自增后返回id"></a>Mybatis-Plus 的默认 Insert 方法不支持 SQLite 主键id自增后返回id</h3><p>写毕业设计项目的时候遇到的 需要插入一条新的记录然后返回新记录的主键id 这个id是自增的</p><p>然后发现Mybatis-Plus的默认Insert方法不支持这个操作 可以插入但是不能返回自增后的id</p><p>后来用事务解决了：本来用SQLite就是考虑到项目的数据量较小才用的 所以直接用串行化在插入操作之后查询SELECT last_insert_rowid()获取刚刚插入的记录的id字段</p><p>上网查了一下似乎改一下sqlite-jdbc的版本就能解决？不过我没试过：<a href="https://www.cnblogs.com/qingzhen/p/17944868">sqlite-jdbc版本导致插入数据自增id问题</a></p><h3 id="CentOS-SQLite临时文件溢出"><a href="#CentOS-SQLite临时文件溢出" class="headerlink" title="CentOS SQLite临时文件溢出"></a>CentOS SQLite临时文件溢出</h3><p><img src="https://pic.joking7.com/2024-11-20-00-03-17" alt="2024-11-20-00-03-17"></p><p>明天着急检查 先用 rm -rf &#x2F;tmp&#x2F;sqlite-jdbc-tmp* 指令删了再说 之后再找溢出原因</p>]]></content>
       
       
       <categories>
