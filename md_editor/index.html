@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh">
+<style>
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background: #2c2827;
+    }
+
+    .editormd {
+        width: 100vw !important;
+        height: 100vh !important;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        z-index: 9999;
+        margin: 0 !important;
+        box-sizing: border-box;
+    }
+</style>
+
+<head title="MD Editor">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/editormd.min.css" />
+</head>
+
+<body>
+    <div id="editor">
+        <!-- Tips: Editor.md can auto append a `<textarea>` tag -->
+        <textarea style="display:none;">### Hello Editor.md !</textarea>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/editormd.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var content = window.localStorage.getItem("KEY_MD_EDITOR_CONTENT");
+
+            var editor = editormd("editor", {
+                toolbarIcons: function () {
+                    var icons = editormd.toolbarModes.full;
+                    icons = icons.filter(function (i) {
+                        return !['fullscreen', 'preview', 'emoji'].includes(i);
+                    });
+                    icons.push('|', 'load_md', 'jump_url','save_md');
+                    return icons;
+                },
+                toolbarCustomIcons: {
+                    load_md: '<input type="file" id="my_file" accept=".md" onchange="md_file_changed()" style="display: none;"><li><a href="javascript:#" onclick="load_md_file()" title="load md" unselectable="on"><i class="fa fa-upload" name="load_md" unselectable="on"></i></a></li>',
+                    jump_url: '<li><a href="javascript:void(0)" onclick="jumpToUrl()" title="返回博客" unselectable="on"><i class="fa fa-home" unselectable="on"></i></a></li>',
+                    save_md: '<li><a href="javascript:void(0)" onclick="saveMdFile()" title="保存为 .md" unselectable="on"><i class="fa fa-download" unselectable="on"></i></a></li>'
+                },
+                width: "100%",
+                height: "100%",
+                theme: "dark",
+                previewTheme: "dark",
+                editorTheme: "pastel-on-dark",
+                path: "/lib/",
+                onload: function () {
+                    // 编辑器初始化完成后再赋值
+                    window.md_editor = this;
+
+                    if (content) {
+                        this.cm.setValue(content);
+                    }
+
+                    // 开启定时器保存内容
+                    setInterval(function () {
+                        window.localStorage.setItem("KEY_MD_EDITOR_CONTENT", window.md_editor.cm.getValue());
+                    }, 1000 * 10);
+                }
+            });
+
+            window.load_md_file = function () {
+                $("#my_file").click();
+            };
+
+            window.md_file_changed = function () {
+                var file = document.getElementById("my_file").files[0];
+                if (!file) return;
+                var reader = new FileReader();
+                reader.readAsText(file, "utf-8");
+                reader.onload = function (e) {
+                    var fileText = e.target.result;
+                    if (window.md_editor && window.md_editor.cm) {
+                        window.md_editor.cm.setValue(fileText);
+                    }
+                };
+            };
+
+            // 跳转博客主页
+            window.jumpToUrl = function () {
+                window.open("https://joking7.com/", "_blank");
+            };
+
+            // 保存md文件
+            window.saveMdFile = function () {
+                if (!window.md_editor || !window.md_editor.cm) {
+                    alert('编辑器尚未初始化完成！');
+                    return;
+                }
+
+                var content = window.md_editor.cm.getValue();
+                if (!content.trim()) {
+                    alert('内容为空，无需保存。');
+                    return;
+                }
+
+                // 默认文件名：时间戳 + .md
+                // var filename = 'note_' + new Date().toISOString().slice(0, 19).replace(/[-:]/g, '') + '.md';
+
+                // 自定义文件名
+                var filename = prompt('请输入文件名（不含扩展名）', 'untitled') || 'untitled';
+                filename += '.md';
+
+                // Blob 构造文件并触发下载
+                var blob = new Blob([content], { type: 'text/markdown;charset=utf-8' });
+                var link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = filename;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            };
+        });
+    </script>
+</body>
+
+</html>
